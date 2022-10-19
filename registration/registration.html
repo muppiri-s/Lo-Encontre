@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../registration/registration.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+
+        <form method="post" action="../home/home.html" id="form" onsubmit="return validate();">
+            <div class="input_wrap">
+                <label for="name">Name</label>
+                <input type="text" class="input" id="name">
+                <div class="error_msg" id="name_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="gender">Gender</label>
+                <div class="custom_select">
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="error_msg" id="gender_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="email">Email Address</label>
+                <input type="text" class="input" id="email">
+                <div class="error_msg" id="email_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="input" id="phone">
+                <div class="error_msg" id="phone_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="city">City</label>
+                <input type="text" class="input" id="city">
+                <div class="error_msg" id="city_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="state">State</label>
+                <input type="text" class="input" id="state">
+                <div class="error_msg" id="state_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="country">Country</label>
+                <input type="text" class="input" id="country">
+                <div class="error_msg" id="country_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <input type="submit" value="submit" class="btn">
+            </div>
+            <div class="input_wrap">
+                <a href="../login/login.html">Already have an account?</a>
+            </div>
+        </form>
+    </div >
+    <script src="../registration/registration.js"></script>
+
+</body>
+
+</html>

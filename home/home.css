@@ -1,35 +1,68 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap');
-
-@import "compass/css3";
-
-* { box-sizing: border-box; }
-body {
-  min-height: 150vh;
-  margin: 0;
-  background-color: #f1f1f1;
-  font-family: 'Lato', arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #33313b;
+/* image */
+img {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px;
 }
-
-h1 { 
-  font-size: 48px; 
-  line-height: 1.2; 
-  margin: 0 0 2em 0;
-}
-
-.sound-title {
+  
+/*Text animation*/
+.animate-charcter
+{
   text-transform: uppercase;
-  font-weight: 900;
+  background-image: url(../images/mn-fall-colors2.jpg);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 9s linear;
+  animation-duration: 100s;
+  display: inline-block;
+  font-size: 100px;
+  padding-top: 50px;
 }
-.flat {
-    color: #f1f1f1;
-    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
+}
+
+/* About App */
+.about_app {
+    text-align: center;
+    font-size:14px;
+	line-height: 22px;
+	color: #0b0202;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* About content */
+.info {
+    color: #6e6e6e;
+    font-family: arial;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+/* line divider */
+.devicer {
+    width: 40em;
+    display: block;
+    height: 3px;
+    background-color: #4b4b4d;
+    margin: 20px auto 40px;
+  }
+
+.signature {
+    font-family: "Brush Script MT", cursive; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+}
