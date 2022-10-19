@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #ff8c68;;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  width: 450px;
+  padding: 20px 35px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.25);
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #75282f;
+}
+
+.wrapper .input_wrap{
+  margin-bottom: 15px;
+}
+
+.wrapper .input_wrap:last-child{
+  margin-bottom: 0;
+}
+
+.wrapper .input_wrap label{
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color:#953a38;
+}
+
+.wrapper .input_wrap .input{
+  border: 1px solid #d5dbd9;
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .input_wrap .custom_select{
+  border: 1px solid #d5dbd9;
+  position: relative;
+}
+
+.wrapper .input_wrap .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .input_wrap .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+}
+
+.wrapper .input_wrap .error_msg {
+    color: #e87060;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.wrapper .input_wrap .input:focus{
+  border-color: #75282f;
+}
+
+.wrapper .input_wrap .btn{
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  background: #75282f;
+  color: #953a38;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.wrapper .input_wrap .btn:hover{
+  background: #e87060;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--Custom css-->
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../registration/registration.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav role="navigation">
+        <div id="clickNav">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="nav-data" role="list">
+                <li><a href="../home/home.html" data-title="Home" aria-label="Home">Home</a></li>
+                <li><a href="../category/category.html" data-title="Category" aria-label="Category">Category</a></li>
+                <li><a href="../stores/stores.html" data-title="Stores" aria-label="Stores">Stores</a></li>
+                <li><a href="../post_a_deal/post_a_deal.html" data-title="Post a deal" aria-label="Post a deal">Post a
+                        Deal</a></li>
+                <li class="separator"></li>
+                <li>
+                    <p><strong> © Lo Encontre weblog</strong></p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="title">
+            Registration Form
+        </div>
+
+        <form method="post" action="../home/home.html" id="form" onsubmit="return validate();">
+            <div class="input_wrap">
+                <label for="name">Name</label>
+                <input type="text" class="input" id="name">
+                <div class="error_msg" id="name_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="gender">Gender</label>
+                <div class="custom_select">
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="error_msg" id="gender_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="email">Email Address</label>
+                <input type="text" class="input" id="email">
+                <div class="error_msg" id="email_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="input" id="phone">
+                <div class="error_msg" id="phone_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="city">City</label>
+                <input type="text" class="input" id="city">
+                <div class="error_msg" id="city_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="state">State</label>
+                <input type="text" class="input" id="state">
+                <div class="error_msg" id="state_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <label for="country">Country</label>
+                <input type="text" class="input" id="country">
+                <div class="error_msg" id="country_msg"></div>
+            </div>
+            <div class="input_wrap">
+                <input type="submit" value="submit" class="btn">
+            </div>
+            <div class="input_wrap">
+                <a href="../login/login.html">Already have an account?</a>
+            </div>
+        </form>
+    </div>
+    <script src="../registration/registration.js"></script>
+
+</body>
+
+</html>
