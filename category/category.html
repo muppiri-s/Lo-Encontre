@@ -1,146 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>W3.CSS Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
-  </head>
-<body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#categories" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-codiepie w3-xxlarge"></i>
-    <p>CATEGORIES</p>
-  </a>
-  
-  <a href="#stores" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-amazon w3-xxlarge"></i>
-  
-    <p>STORES</p>
-  </a>
-  <a href="#Post a deal" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-rub w3-xxlarge"></i>
-    <p>POST A DEAL</p>
-  </a>
-</nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+  <!--Custom css-->
+  <link rel="stylesheet" href="../category/category.css">
+  <link rel="stylesheet" href="../navigation/navigation.css">
+</head>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Lo</span> encontré.</h1>
-    <p>Find and post great deals.</p>
-    
+<body>
+  <!-- Navigation bar -->
+  <nav role="navigation">
+    <div id="clickNav">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul class="nav-data" role="list">
+        <li><a href="../home/home.html" data-title="Home" aria-label="Home">Home</a></li>
+        <li><a href="../category/category.html" data-title="Category" aria-label="Category">Category</a></li>
+        <li><a href="../stores/stores.html" data-title="Stores" aria-label="Stores">Stores</a></li>
+        <li><a href="../post_a_deal/post_a_deal.html" data-title="Post a deal" aria-label="Post a deal">Post a
+            Deal</a></li>
+        <li class="separator"></li>
+        <li>
+          <p><strong> © Lo Encontre weblog</strong></p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Title -->
+  <header class="title">
+    <h1 class="w3-jumbo">Store</h1>
   </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">CATEGORIES</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h2 class="w3-text-light-grey">Clothing</h2>
-    <h2 class="w3-text-light-white">Men  Women  Kids</h2>
-    <h2 class="w3-text-light-grey">Electronics</h2>
-    <h2 class="w3-text-light-white">Computers  Mobiles  Tablets  TVs</h2>
-    <h2 class="w3-text-light-grey">Home and Garden</h2>
-    <h2 class="w3-text-light-white">Appliances  Crockery  Tools  Plants</h2>
-    <h2 class="w3-text-light-grey">Miscellaneous</h2>
-    <h2 class="w3-text-light-white">Stationary  Books  Medicines</h2>
+  <div class="devicer"></div>
 
-
-
-    <p>
-    </p>
-    
-
-    
-    
-    
-    </div>
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Reviews</h3>  
-    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> Customer.</p>
-    <p>I was able to sell most of my stuff while moving on Lo encontré and got great prices from the buyers. Definetly recoomend this site for someone looking to sell stuff.</p><br>
-    
-    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> Customer.</p>
-    <p>I was able to find great deals in various stores before others because of Lo encontré. This site has helped my life a lot.</p>
-  <!-- End About Section -->
+  <!--Categories-->
+  <div id="boxes">
+    <div style="--color: #f44336">Winter</div>
+    <div style="--color: #e91e63">Electronics</div>
+    <div style="--color: #9c27b0">Home</div>
+    <div style="--color: #2196f3">Apparel</div>
+    <div style="--color: #4caf50">Garden</div>
+    <div style="--color: #ff9800">Office</div>
+    <div style="--color: #a7678d">Hardware</div>
+    <div style="--color: #8167a7">Kitchen</div>
+    <div style="--color: #8da767">Tools</div>
   </div>
-  
-  
+  <script>
+    var boxes = document.querySelectorAll('#boxes > div');
+    [].forEach.call(boxes, box => {
+      box.addEventListener('mousemove', e => {
+        document.body.style.setProperty(
+          '--bg-color',
+          box.style.getPropertyValue('--color')
+        );
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Us</h2>
-    <hr style="width:200px" class="w3-opacity">
+        var size = parseInt(getComputedStyle(box).width);
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Vermont, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 5038687343</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Lo-encontré@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send us a message:</p>
+        // scaling
+        var x = size * .3 * .7 + .7 * e.offsetX;
+        var y = size * .3 * .7 + .7 * e.offsetY;
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+        box.style.setProperty('--x', x);
+        box.style.setProperty('--y', y);
+        box.style.setProperty('--size', size);
+      });
+    });
+  </script>
+
+  <!--Footer-->
+  <div class="mt-5 p-4 bg-dark text-white text-center">
+    <p> &copy; Lo Encontre</p>
   </div>
-  
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
- 
- <!-- End footer -->
-</footer>
-
-<!-- END PAGE CONTENT -->
-</div>
 
 </body>
+
 </html>
