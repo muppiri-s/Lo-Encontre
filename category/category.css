@@ -1,19 +1,11 @@
 /* Title */
-h1 {
+.w3-jumbo {
     position: relative;
     color: #d75f5f;
     font-weight: 600;
     font-size: 60px;
     margin: 20px;
     text-align: center;
-}
-
-/* Sub title */
-p {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 4;
 }
 
 /* Categories */

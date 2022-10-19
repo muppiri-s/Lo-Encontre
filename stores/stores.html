@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="../stores/stores.css">
 </head>
 
-<body class="w3-black">
+<body>
 
   <!-- Navigation bar -->
   <nav role="navigation">
@@ -38,97 +38,158 @@
     </div>
   </nav>
 
-  <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-      <h1 class="w3-jumbo"><span class="w3-hide-small">Lo</span> encontré.</h1>
-      <p>Find and post great deals.</p>
+  <!-- Title -->
+  <header class="title">
+    <h1 class="w3-jumbo">Store</h1>
+  </header>
 
-    </header>
+  <div class="devicer"></div>
 
-    <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-      <h2 class="w3-text-light-grey">STORES</h2>
-      <hr style="width:200px" class="w3-opacity">
-      <img src="C:\Users\drush\Desktop\amazon.jpg">
+  <!--About page-->
+  <p class="subtext"> The app lets you to filter the content or choose from various blah </p>
 
-      <img src="C:\Users\drush\Desktop\Dsw.jpg">
-
-      <img src="C:\Users\drush\Desktop\Lowes.jpg">
-
-      <img src="C:\Users\drush\Desktop\Best buy.jpg">
-
-      <img src="C:\Users\drush\Desktop\Walmart.jpg">
-
-      <img src="C:\Users\drush\Desktop\Macy's.jpg">
-
-      <p>
-      </p>
-
-
-
-
-
+  <!--Search & filter -->
+  <div class="main">
+    <h2>Search & Filter</h2>
+    <input type="text" id="myInput" onkeyup="search()" placeholder="Search" title="Type in a name">
+    <div style="display:block;">
+      <div id="myBtnContainer" class="float-left" style="width: 50%;">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+      </div>
+      <div class="float-right" id="myBtnContainer1">
+        <button class="btn active" onclick="filterSelection('all')"> Default</button>
+        <button class="btn" onclick="sortList();"> Title</button>
+        <button class="btn" onclick="chat_order();"> Date</button>
+      </div>
     </div>
 
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Reviews</h3>
-    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
-      style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> Customer.</p>
-    <p>I was able to sell most of my stuff while moving on Lo encontré and got great prices from the buyers. Definetly
-      recoomend this site for someone looking to sell stuff.</p><br>
 
-    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
-      style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> Customer.</p>
-    <p>I was able to find great deals in various stores before others because of Lo encontré. This site has helped my
-      life a lot.</p>
-    <!-- End About Section -->
+    <div class="rows" id="myUL">
+      <ul id="id01" class="sort-list">
+        <li class="nature">
+          <div class="content" data-default="Mountains" data-title="Nature" data-date="11-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/mountains.jpg" alt="Mountains"
+              style="width:100%">
+            <div class="flex">
+              <h4>Mountains</h4>
+              <h5>Nature</h5>
+            </div>
+            <p>Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can
+              refer to the phenomena...</p>
+            <h6>Date: 11-02-2020</h6>
+          </div>
+        </li>
+
+        <li class="nature">
+          <div class="content" data-default="Lights" data-title="Nature" data-date="12-04-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/lights.jpg" alt="Lights" style="width:100%">
+            <div class="flex">
+              <h4>Lights</h4>
+              <h5>Nature</h5>
+            </div>
+            <p>From one point of view, humans are a prime example of nature, and are the most widely studied natural
+              inhabitants of planet earth...</p>
+            <h6>Date: 12-02-2020</h6>
+          </div>
+        </li>
+        <li class="nature">
+          <div class="content" data-default="Forest" data-title="Nature" data-date="13-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/nature.jpg" alt="Nature" style="width:100%">
+            <div class="flex">
+              <h4>Forest</h4>
+              <h5>Nature</h5>
+            </div>
+            <p>The trees and the flowers and the animals who lasted all around. Imagining all of nature destroyed would
+              be like leaving...</p>
+            <h6>Date: 13-02-2020</h6>
+          </div>
+        </li>
+
+        <li class="cars">
+          <div class="content" data-default="Retro" data-title="Cars" data-date="14-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars1.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Retro</h4>
+              <h5>Cars</h5>
+            </div>
+            <p>Retro cars are vehicles that are styled to appear like cars from previous decades. Often these cars use
+              modern technology...</p>
+            <h6>Date: 14-02-2020</h6>
+          </div>
+        </li>
+        <li class="cars">
+          <div class="content" data-default="Fast" data-title="Cars" data-date="15-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars2.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Fast</h4>
+              <h5>Cars</h5>
+            </div>
+            <p>Tracy Chapman Fast Car Picture: Elektra. By Tom Eames. It's one of the most beloved ballads of the 1980s,
+              and one ...</p>
+            <h6>Date: 15-02-2020</h6>
+          </div>
+        </li>
+        <li class="cars">
+          <div class="content" data-default="Classic" data-title="Cars" data-date="18-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars3.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Classic</h4>
+              <h5>Cars</h5>
+            </div>
+            <p>A classic car is an older automobile, typically 20 years or older, though definitions vary. The common
+              theme is of an older...</p>
+            <h6>Date: 18-02-2020</h6>
+          </div>
+        </li>
+
+        <li class="people">
+          <div class="content" data-default="Girl" data-title="People" data-date="22-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/people2.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Girl</h4>
+              <h5>People</h5>
+            </div>
+            <p>Descriptionari has thousands of original creative story ideas from new authors and amazing quotes to
+              boost your creativity.</p>
+            <h6>Date: 22-02-2020</h6>
+          </div>
+        </li>
+        <li class="people">
+          <div class="content" data-default="Man" data-title="People" data-date="24-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/people1.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Man</h4>
+              <h5>People</h5>
+            </div>
+            <p>Strong, tall, big, handsome, studly, rough, tough, charming, robust, protective, hero, powerful,
+              aggressive, funny, player, cocky...</p>
+            <h6>Date: 24-02-2020</h6>
+          </div>
+        </li>
+        <li class="people">
+          <div class="content" data-default="Woman" data-title="People" data-date="26-02-2020">
+            <img src="https://murugananthamc.files.wordpress.com/2020/04/people3.jpg" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Woman</h4>
+              <h5>People</h5>
+            </div>
+            <p>It's an indelible description of a complicated woman, one so persuasive that you'd even think Margo
+              exists outside...</p>
+            <h6>Date: 26-02-2020</h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="not-found" style="display:none">Not Found</div>
   </div>
+  <script src="../stores/stores.js"></script>
 
-
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Us</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Vermont, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 5038687343</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Lo-encontré@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send us a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- End Contact Section -->
-  </div>
-
-  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-
-    <!-- End footer -->
-  </footer>
-
-  <!-- END PAGE CONTENT -->
+  <!--Footer-->
+  <div class="mt-5 p-4 bg-dark text-white text-center">
+    <p> &copy; Lo Encontre</p>
   </div>
 
 </body>
