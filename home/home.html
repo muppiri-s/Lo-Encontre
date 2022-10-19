@@ -7,8 +7,12 @@
     <!-- bootstrap 5 css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- BOX ICONS CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <!-- ICONS CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--Custom CSS-->
     <link rel="stylesheet" href="../home/home.css">
     <link rel="stylesheet" href="../navigation/navigation.css">
@@ -50,42 +54,113 @@
 
     <!-- About web application -->
     <div class="about_app">
-        <div class="col-sm-10 col-sm-offset-4 pt-5">
-            <p>Hi, my name is Alex Devero and I am a Web Designer & Developer based in Prague. I love crafting beautiful
-                web pages in HTML5, CSS3 and JavaScript or jQuery. My other skills include WordPress, Photoshop,
-                Illustrator. You can grab my CV in
+        <div class="container pt-5">
+            <p>Hi there! Rushitaa and Sahithi created an Ecommerce website and named it Lo Encontre. Their promise was
+                to help customers get good deals on products and also post great deals. This enables the customer to
+                save money and also have a great shopping experience.
             </p>
         </div>
     </div>
 
-
-    <!--About developers-->
-    <div class="container pt-5">
-        <h2 style="text-align:center;">Authors</h2>
-        <div class="devicer"></div>
-        <div class="row info">
-            <div class="col-sm-8">
-                <p>
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaakjwdkj lshf ihfolsifh ihfo.
-                    <span class="signature">.Rushitaa Dattuluri</span>
-            </div>
-            <div class="col-md-4">
-                <img src="../images/rushitha.jfif" alt="Lewis Alberto Briffa" class="img-responsive img-circle">
-            </div>
-        </div>
-        <div class="row info">
-            <div class="col-md-4">
-                <img src="../images/sahithi.jpg" alt="Lewis Alberto Briffa" class="img-responsive img-circle">
-            </div>
-            <div class="col-sm-8">
-                <p>
-                    sdjfh ksuefglsiufgisug fiu gfilusglfiuglfiugeiwe.
-                    <span class="signature">.Sahithi Muppiri</span>
+    <!--Search bar-->
+    <div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-9">
+                <div class="card p-4 mt-3">
+                    <h3 class="heading mt-5 text-center">Hi! How can we help You?</h3>
+                    <div class="d-flex justify-content-center px-5">
+                        <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a
+                                href="#" class="search-icon"> <span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+                    <div class="row mt-4 g-1 px-4 mb-5">
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-headphones"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Electronics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-paperclip"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Office</span> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-cutlery"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Kitchen</span> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-tree-conifer"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Garden</span> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-bed"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Home</span> </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-inner p-3 d-flex flex-column align-items-center"> <span
+                                    class="glyphicon glyphicon-sunglasses"></span>
+                                <div class="text-center mg-text"> <span class="mg-text">Apparel</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!--About developers-->
+    <h2 style="text-align:center;">Authors</h2>
+    <div class="devicer"></div>
+    <div class="row text-center">
+
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../images/sahithi.jpg" alt="sahithi" width="100"
+                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Sahithi</h5><span class="small text-uppercase text-muted">CS Graduate</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../images/rushitha.jfif" alt="" width="100"
+                    class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Rushitaa</h5><span class="small text-uppercase text-muted">CS Graduate</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- End -->
+    </div>
+
     <!--Footer-->
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <p> &copy; Lo Encontre</p>
+    </div>
 
 </body>
 
