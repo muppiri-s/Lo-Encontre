@@ -5,6 +5,14 @@ img {
     height: 200px;
 }
 
+/* Sign in */
+.login_logo {
+    justify-content: right;
+    height: 80px;
+    display: flex;
+    border: 50%;;
+}
+
 /*Text animation*/
 .animate-charcter {
     text-transform: uppercase;
@@ -71,7 +79,6 @@ img {
 
 /* Search bar */
 .card {
-
     border: none;
     background: #eee;
 
@@ -185,7 +192,7 @@ a:link {
 .notification_bell {
     height: 80px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .btn {
