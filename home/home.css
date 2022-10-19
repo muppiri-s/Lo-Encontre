@@ -1,35 +1,297 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma&display=swap');
-
-@import "compass/css3";
-
-* { box-sizing: border-box; }
-body {
-  min-height: 150vh;
-  margin: 0;
-  background-color: #f1f1f1;
-  font-family: 'Lato', arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #33313b;
+/* image */
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
-h1 { 
-  font-size: 48px; 
-  line-height: 1.2; 
-  margin: 0 0 2em 0;
+/* Sign in */
+.login_logo {
+  justify-content: right;
+  height: 80px;
+  display: flex;
+  border: 50%;;
 }
 
-.sound-title {
+/*Text animation*/
+.animate-charcter {
   text-transform: uppercase;
-  font-weight: 900;
+  background-image: url(../images/mn-fall-colors2.jpg);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 9s linear;
+  animation-duration: 100s;
+  display: inline-block;
+  font-size: 100px;
+  padding-top: 50px;
 }
-.flat {
-    color: #f1f1f1;
-    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+
+@keyframes textclip {
+  to {
+      background-position: 200% center;
   }
+}
+
+/* About App */
+.about_app {
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: #0b0202;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(-45deg, #75282f, #953a38, #cb5947, #ff8c68, #ffcf87);
+  animation: gradient 20s ease infinite;
+  height: 25vh;
+}
+
+/* About content */
+.info {
+  color: #6e6e6e;
+  font-family: arial;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* line divider */
+.devicer {
+  width: 40em;
+  display: block;
+  height: 3px;
+  background-color: #4b4b4d;
+  margin: 20px auto 40px;
+}
+
+/* Signature text */
+.signature {
+  font-family: "Brush Script MT", cursive;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+/* Search bar */
+.card {
+  border: none;
+  background: #eee;
+
+}
+
+.search {
+  width: 100%;
+  margin-bottom: auto;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  margin-top: 5px;
+  caret-color: transparent;
+  line-height: 20px;
+  transition: width 0.4s linear
+}
+
+.search .search-input {
+  padding: 0 10px;
+  width: 100%;
+  caret-color: #b2f653;
+  font-size: 19px;
+  font-weight: 300;
+  color: black;
+  transition: width 0.4s linear;
+}
+
+.search-icon {
+  height: 34px;
+  width: 34px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #ff8c68;
+  font-size: 10px;
+  bottom: 30px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.search-icon:hover {
+  color: #fff !important;
+}
+
+a:link {
+  text-decoration: none
+}
+
+.card-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+  border: none;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+
+.card-inner:hover {
+  transform: scale(1.1);
+}
+
+.mg-text span {
+  font-size: 12px;
+}
+
+.mg-text {
+  line-height: 14px;
+}
+
+/* About Authors */
+.social-link {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(32 30 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(54, 53, 53);
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: rgb(84, 62, 62);
+  text-decoration: none;
+  color: rgb(29, 20, 20);
+}
+
+/* Notification bell */
+.notification_bell {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: #ed657d;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 5px;
+  padding: 15px 35px;
+  border: 1px solid transparent;
+  border-radius: 4em;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, .2);
+  outline: 0;
+  transition: .8s;
+  will-change: transform;
+  z-index: 9999;
+}
+
+.btn:active {
+  transform: scale(.9);
+}
+
+.notification {
+  width: 50px;
+  height: inherit;
+  color: #75282f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.notification::after {
+  min-width: 20px;
+  height: 20px;
+  content: attr(data-count);
+  background-color: #ed657d;
+  font-family: monospace;
+  font-weight: bolt;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: .3s;
+  opacity: 0;
+  transform: scale(.5);
+  will-change: opacity, transform;
+}
+
+.notification.show-count::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.notification::before {
+  content: "\f0f3";
+  font-family: "FontAwesome";
+  display: block;
+}
+
+.notification.notify::before {
+  animation: bell 1s ease-out;
+  transform-origin: center top;
+}
+
+@keyframes bell {
+  0% {
+      transform: rotate(35deg);
+  }
+
+  12.5% {
+      transform: rotate(-30deg);
+  }
+
+  25% {
+      transform: rotate(25deg);
+  }
+
+  37.5% {
+      transform: rotate(-20deg);
+  }
+
+  50% {
+      transform: rotate(15deg);
+  }
+
+  62.5% {
+      transform: rotate(-10deg)
+  }
+
+  75% {
+      transform: rotate(5deg)
+  }
+
+  100% {
+      transform: rotate(0);
+  }
+}

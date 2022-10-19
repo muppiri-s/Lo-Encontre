@@ -1,0 +1,136 @@
+/* Title */
+.w3-jumbo {
+    position: relative;
+    color: #d75f5f;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* line divider */
+.devicer {
+    width: 40em;
+    display: block;
+    height: 3px;
+    background-color: #4b4b4d;
+    margin: 20px auto 40px;
+}
+
+/* Sub text */
+.subtext {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+/* Search & Filter */
+* {
+    box-sizing: border-box;
+  }
+  
+ 
+  /* Center website */
+  .main {
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  .rows {
+    margin: 10px -16px;
+  }
+  .rows ul {
+  display:inline-block;
+  padding:0;
+  }
+  .rows,.rows>ul>li {
+    padding: 8px;
+  }
+  
+  
+  
+  /* Create three equal columns that floats next to each other */
+  li {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  
+  }
+  
+  /* Clear floats after rowss */ 
+  .rows:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  .content p {font-size:15px; line-height:19px;}
+  .content h6	 {font-size:15px; line-height:19px;     padding: 0;    margin: 0;}
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  .flex {display: flex;}
+  .float-left{float:left;}
+  .float-right{float:right;}
+  .flex h4{ text-align:left;  width: 50%; margin: 0;
+      padding: 0;    line-height: 25px;}
+  .flex h5{ text-align:right;  width: 50%; margin: 0;
+      padding: 0;    line-height: 25px; color:#078fc3;}
+  
+  #myInput {
+    background-image: url('https://murugananthamc.files.wordpress.com/2020/04/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+  
