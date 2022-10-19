@@ -29,10 +29,7 @@
     box-sizing: border-box;
   }
   
-<<<<<<< HEAD
  
-=======
->>>>>>> 78ae8a7cb561c3167a4b3123179bcdcf9a684705
   /* Center website */
   .main {
     max-width: 1024px;
@@ -42,19 +39,11 @@
   .rows {
     margin: 10px -16px;
   }
-<<<<<<< HEAD
   .rows ul {
   display:inline-block;
   padding:0;
   }
   .rows,.rows>ul>li {
-=======
-  .rows .sort-list {
-  display:inline-block;
-  padding:0;
-  }
-  .rows,.rows>.sort-list>li {
->>>>>>> 78ae8a7cb561c3167a4b3123179bcdcf9a684705
     padding: 8px;
   }
   
