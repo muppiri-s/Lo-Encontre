@@ -2,8 +2,10 @@
 <html>
 
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Custom css-->
@@ -44,7 +46,7 @@
   <div class="devicer"></div>
 
   <!--About page-->
-  <p class="subtext"> The app lets you to filter the content or choose from various blah </p>
+  <p class="subtext"> The section lets you to filter the content or choose from various stores </p>
 
   <!--Search & filter -->
   <div class="main">
@@ -53,145 +55,115 @@
     <div style="display:block;">
       <div id="myBtnContainer" class="float-left" style="width: 50%;">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
+        <button class="btn" onclick="filterSelection('Fashion')"> Fashion</button>
+        <button class="btn" onclick="filterSelection('Groceries')"> Groceries</button>
+        <button class="btn" onclick="filterSelection('Home and Garden')"> Home and Garden</button>
+        <button class="btn" onclick="filterSelection('Electronics')"> Electronics</button>
+        <button class="btn" onclick="filterSelection('Miscellaneous')"> Miscellaneous</button>
+
+
       </div>
-      <div class="float-right" id="myBtnContainer1">
-        <button class="btn active" onclick="filterSelection('all')"> Default</button>
-        <button class="btn" onclick="sortList();"> Title</button>
-        <button class="btn" onclick="chat_order();"> Date</button>
-      </div>
-    </div>
+      
 
 
     <div class="rows" id="myUL">
       <ul id="id01" class="sort-list">
-        <li class="nature">
-          <div class="content" data-default="Lights" data-title="Nature" data-date="12-04-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/lights.jpg" alt="Lights" style="width:100%">
+        <li class="Groceries">
+          <div class="content" data-default="Mountains" data-title="Nature" data-date="11-02-2020">
+            <img src="https://th.bing.com/th/id/R.a13ea0a4e1b3a9ea14564381359f90e0?rik=K0kPiOhKM2msvw&riu=http%3a%2f%2f1.bp.blogspot.com%2f-nv2Ac4_q6gg%2fVS4UezPYE3I%2fAAAAAAAACC4%2f8PDFkoc8_ns%2fs1600%2fWalmart-logo-vector.png&ehk=bk3qjZ9Bu4sbaXNf%2fzKSx5F9LQKgPrb0TpiI1gQJ2CY%3d&risl=&pid=ImgRaw&r=0" alt="Mountains"
+              style="width:100%">
             <div class="flex">
-              <h4>Lights</h4>
-              <h5>Nature</h5>
+              <h4>Walmart</h4>
+              
             </div>
-            <p>From one point of view, humans are a prime example of nature, and are the most widely studied natural
-              inhabitants of planet earth...</p>
-            <h6>Date: 12-02-2020</h6>
-          </div>
-        </li>
-        <li class="nature">
-          <div class="content" data-default="Forest" data-title="Nature" data-date="13-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/nature.jpg" alt="Nature" style="width:100%">
-            <div class="flex">
-              <h4>Forest</h4>
-              <h5>Nature</h5>
-            </div>
-            <p>The trees and the flowers and the animals who lasted all around. Imagining all of nature destroyed would
-              be like leaving...</p>
-            <h6>Date: 13-02-2020</h6>
+            
           </div>
         </li>
 
-        <li class="nature">
+        <li class="Miscellaneous">
           <div class="content" data-default="Lights" data-title="Nature" data-date="12-04-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/lights.jpg" alt="Lights" style="width:100%">
+            <img src="https://www.tripfiction.com/wp-content/uploads/2016/08/1920x1080-brands-amazon-logo.jpg" alt="Lights" style="width:100%">
             <div class="flex">
-              <h4>Lights</h4>
-              <h5>Nature</h5>
+              <h4>Amazon</h4>
+              
             </div>
-            <p>From one point of view, humans are a prime example of nature, and are the most widely studied natural
-              inhabitants of planet earth...</p>
-            <h6>Date: 12-02-2020</h6>
+            
           </div>
         </li>
-        <li class="nature">
+        <li class="Fashion">
           <div class="content" data-default="Forest" data-title="Nature" data-date="13-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/nature.jpg" alt="Nature" style="width:100%">
+            <img src="https://logodix.com/logo/989004.gif" alt="Nature" style="width:100%">
             <div class="flex">
-              <h4>Forest</h4>
-              <h5>Nature</h5>
+              <h4>Designer Shoe Warehouse</h4>
+              
             </div>
-            <p>The trees and the flowers and the animals who lasted all around. Imagining all of nature destroyed would
-              be like leaving...</p>
-            <h6>Date: 13-02-2020</h6>
+            
           </div>
         </li>
 
-        <li class="cars">
+        <li class="Home and Garden">
           <div class="content" data-default="Retro" data-title="Cars" data-date="14-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars1.jpg" alt="Car" style="width:100%">
+            <img src="https://download.logo.wine/logo/Lowe's/Lowe's-Logo.wine.png" alt="Car" style="width:100%">
             <div class="flex">
-              <h4>Retro</h4>
-              <h5>Cars</h5>
+              <h4>Lowes</h4>
+              
             </div>
-            <p>Retro cars are vehicles that are styled to appear like cars from previous decades. Often these cars use
-              modern technology...</p>
-            <h6>Date: 14-02-2020</h6>
+            
           </div>
         </li>
-        <li class="cars">
+        <li class="Groceries">
+          <div class="content" data-default="Retro" data-title="Cars" data-date="14-02-2020">
+            <img src="https://th.bing.com/th/id/R.8d9dafdb7e34960d527ddb36e9ae6d5d?rik=8ok3mSSZxJeLXA&riu=http%3a%2f%2fdistributioncenterjobs.net%2fwp-content%2fuploads%2f2013%2f01%2fTarget-Logo.jpg&ehk=ZLen9t20m5dG2kODYZ6TePjXR%2bHYtTzRzKdxAoH5kmA%3d&risl=&pid=ImgRaw&r=0" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>Target</h4>
+              
+            </div>
+            
+          </div>
+        </li>
+        <li class="Fashion">
+          <div class="content" data-default="Retro" data-title="Cars" data-date="14-02-2020">
+            <img src="https://www.gannett-cdn.com/-mm-/7621684ce379670ab1e31c466f93099d935efdfc/c=479-1083-2553-2255/local/-/media/2017/03/09/Redding/Redding/636246779110584514-JCPenney-Logo.png?width=3200&height=1680&fit=crop" alt="Car" style="width:100%">
+            <div class="flex">
+              <h4>JCPenney</h4>
+              
+            </div>
+            
+          </div>
+        </li>
+        <li class="Fashion">
           <div class="content" data-default="Fast" data-title="Cars" data-date="15-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars2.jpg" alt="Car" style="width:100%">
+            <img src="https://th.bing.com/th/id/OIP.82AlEBFB5W6wyUWPVNGwEwHaCE?pid=ImgDet&w=700&h=195&rs=1" alt="Car" style="width:100%">
             <div class="flex">
-              <h4>Fast</h4>
-              <h5>Cars</h5>
+              <h4>Macy's</h4>
+              
             </div>
-            <p>Tracy Chapman Fast Car Picture: Elektra. By Tom Eames. It's one of the most beloved ballads of the 1980s,
-              and one ...</p>
-            <h6>Date: 15-02-2020</h6>
+           
           </div>
         </li>
-        <li class="cars">
+        <li class="Electronics">
           <div class="content" data-default="Classic" data-title="Cars" data-date="18-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/cars3.jpg" alt="Car" style="width:100%">
+            <img src="https://th.bing.com/th/id/R.7672acc23fc5f73e70a809061a1e563d?rik=OnhiBVlThT%2bm8A&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f02%2fBest_Buy_Logo_Transparent.png&ehk=Rln%2f6Cx2PMU9KNKzKX1c7VqbxDHahQTYYoOLz9ABtck%3d&risl=&pid=ImgRaw&r=0" alt="Car" style="width:100%">
             <div class="flex">
-              <h4>Classic</h4>
-              <h5>Cars</h5>
+              <h4>Best buy</h4>
+              
             </div>
-            <p>A classic car is an older automobile, typically 20 years or older, though definitions vary. The common
-              theme is of an older...</p>
-            <h6>Date: 18-02-2020</h6>
+           
           </div>
         </li>
 
-        <li class="people">
+        <li class="Home and Garden">
           <div class="content" data-default="Girl" data-title="People" data-date="22-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/people2.jpg" alt="Car" style="width:100%">
+            <img src="https://th.bing.com/th/id/R.21d154689e64de69762363f3c2542cc0?rik=J9Q6CaPHBqOvkA&riu=http%3a%2f%2fwww.hissingkitty.com%2fsites%2fdefault%2ffiles%2fcompany_logo%2fmichaels-complaints-dept-logo.png&ehk=s05O8TY4Wlmbthr0k%2fIjGxAVn9ok3l8acK4i2me11R4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Car" style="width:100%">
             <div class="flex">
-              <h4>Girl</h4>
-              <h5>People</h5>
+              <h4>Michaels</h4>
+              
             </div>
-            <p>Descriptionari has thousands of original creative story ideas from new authors and amazing quotes to
-              boost your creativity.</p>
-            <h6>Date: 22-02-2020</h6>
+            
           </div>
         </li>
-        <li class="people">
-          <div class="content" data-default="Man" data-title="People" data-date="24-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/people1.jpg" alt="Car" style="width:100%">
-            <div class="flex">
-              <h4>Man</h4>
-              <h5>People</h5>
-            </div>
-            <p>Strong, tall, big, handsome, studly, rough, tough, charming, robust, protective, hero, powerful,
-              aggressive, funny, player, cocky...</p>
-            <h6>Date: 24-02-2020</h6>
-          </div>
-        </li>
-        <li class="people">
-          <div class="content" data-default="Woman" data-title="People" data-date="26-02-2020">
-            <img src="https://murugananthamc.files.wordpress.com/2020/04/people3.jpg" alt="Car" style="width:100%">
-            <div class="flex">
-              <h4>Woman</h4>
-              <h5>People</h5>
-            </div>
-            <p>It's an indelible description of a complicated woman, one so persuasive that you'd even think Margo
-              exists outside...</p>
-            <h6>Date: 26-02-2020</h6>
-          </div>
-        </li>
-
-
+        
+        
       </ul>
     </div>
     <div class="not-found" style="display:none">Not Found</div>

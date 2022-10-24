@@ -29,6 +29,7 @@
     box-sizing: border-box;
   }
   
+ 
   /* Center website */
   .main {
     max-width: 1024px;
@@ -38,11 +39,11 @@
   .rows {
     margin: 10px -16px;
   }
-  .rows .sort-list {
+  .rows ul {
   display:inline-block;
   padding:0;
   }
-  .rows,.rows>.sort-list>li {
+  .rows,.rows>ul>li {
     padding: 8px;
   }
   
