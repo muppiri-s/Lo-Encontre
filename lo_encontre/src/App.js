@@ -9,7 +9,7 @@ import Logo from './components/logo';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Categories from './components/categories';
-import Stores from './components/stores';
+import About from './components/about';
 import PostaDeal from './components/post_a_deal';
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/logo' element={<Logo />} />
-        <Route exact path='/home' element={<Home />} />
+        <Route path='/home' element={<Home />} />
         <Route path='/categories' element={<Categories />} />
-        <Route path='/stores' element={<Stores />} />
+        <Route path='/about' element={<About />} />
         <Route path='/post_a_deal' element={<PostaDeal />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />

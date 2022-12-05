@@ -130,3 +130,36 @@ footer {
   background-color: #4c8bd9a8;
   border-radius: 4px;
 }
+
+/* Camel site */
+.camel_site {
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 5px;
+  width: 30vh;
+  margin: 20px auto;
+  padding: 10px;
+  float: right;
+  text-align: center;
+}
+
+.camel_site img {
+  width: 100px;
+  height: 100px;
+}
+
+/* About image resize */
+.about {
+  background-color: rgba(43, 77, 99, 0.414);
+  border-radius: 5px;
+  width: 70vh;
+  margin: 20px auto;
+  padding: 25px;
+  font-size: 14px;
+  font-family: cursive;
+}
+
+.about img {
+  width: 50vh;
+  height: 50vh;
+}
+

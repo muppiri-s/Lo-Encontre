@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Kohls from "./coupons";
 
 import LocationInfo from "./multistep-form/first";
 import OtherInfo from "./multistep-form/second";
@@ -68,6 +69,7 @@ function PostaDeal() {
                 }
             </div>
             <div className="body">{componentList[page]}</div>
+                <Kohls />
         </div>
     );
 }
