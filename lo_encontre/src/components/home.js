@@ -1,20 +1,19 @@
 import * as React from 'react';
 import Notification from './notification';
+import Banner from './banner';
 
 const Home = () => {
     return (
         <div>
-            <form action="/" method="get">
-                <label htmlFor="header-search">
-                    <span className="visually-hidden">Search for discounted items</span>
-                </label><br />
-                <input
+            <Banner />
+            <form action="/" method="get" className='sub_form'>
+                <h2>Search for discounted items</h2>
+                <input className='search_bar'
                     type="text"
-                    id="header-search"
-                    placeholder="Search blog posts"
-                    name="s"
+                    id="search"
+                    placeholder="Search Products"
                 />
-                <button type="submit">Search</button>
+                <button type="submit" className='btn'>Search</button>
             </form>
             <Notification />
         </div>

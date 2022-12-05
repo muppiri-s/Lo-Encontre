@@ -1,11 +1,20 @@
 import * as React from 'react';
 import styled from 'styled-components'
+import { useNavigate } from "react-router-dom";
 
 const Logo = () => {
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "../home";
+    navigate(path);
+  }
+
   return (
     <Container>
       <Title>
         <Span>Lo</Span> Encontre<Span>.</Span>
+        <p className="para">"I Found It!"</p>
+        <button className='btn' onClick={routeChange}>Go Ahead &gt;&gt;&gt;</button>
       </Title>
     </Container>
   );
@@ -20,7 +29,7 @@ const Title = styled.h1`
   font-size: 8em;
   text-align: center;
   color: #212121;
-  padding: 5%;
+  padding: 2%;
 `
 const Span = styled.span`
   color: #212121;

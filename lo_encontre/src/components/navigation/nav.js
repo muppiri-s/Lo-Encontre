@@ -1,5 +1,6 @@
 import React from "react";
 import { Nav, NavLink, NavMenu } from "./navBarElements";
+import logo from "../images/logo.png"
 
 const Navbar = () => {
     return (
@@ -7,7 +8,7 @@ const Navbar = () => {
             <Nav>
                 <NavMenu>
                     <NavLink to="/logo">
-                        <img src="./images/logo.jfif" alt="logo" />
+                        <img src={logo} alt="logo" />
                     </NavLink>
                     <NavLink to="/home" >
                         Home

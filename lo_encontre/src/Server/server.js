@@ -1,19 +1,30 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const dotenv = require('dotenv');
+require('dotenv').config()
 
+const express = require('express');
+const mongoose = require('mongoose')
+const cors = require('cors');
+const userRoutes = require('./routes/user')
+const categoryRoutes = require('./routes/category')
+
+// express app
 const app = express();
-app.use(bodyParser.json());
+
+// middleware
+app.use(express.json());
 app.use(cors());
 
-const connectDB = require('./config/db_config');
+// routes
+app.use('/api/user/', userRoutes)
+app.use('/api/category/', categoryRoutes)
 
-// Load Config
-dotenv.config({path: './config/.env'})
+// connect to db
+// mongoose.connect(process.env.MONGO_URI).then(() => {
+mongoose.connect("mongodb+srv://loEncontre:LoEncontre123@cluster0.fegvvyy.mongodb.net/").then(() => {
+    app.listen(process.env.PORT, () => {
+        console.log('connected to db & listening on port', process.env.PORT)
+    })
+}).catch((err) => {
+    console.error('App starting error', err.stack);
+})
 
-connectDB();
-// // Routes
-// app.use('/', require('./routes/routes'));
-
-app.listen(5000);
+app.listen(8000);
