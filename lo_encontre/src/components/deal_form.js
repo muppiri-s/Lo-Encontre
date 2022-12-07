@@ -20,8 +20,7 @@ function DealForm() {
         }
         const emailID = user.email
         const deals = { title, weight, price, emailID }
-        //const response = await fetch('http://localhost:8000/api/deals/list/?id='+id, {
-        const response = await fetch('http://localhost:8000/api/deals', {
+        const response = await fetch('https://loencontre-kzki.onrender.com/api/deals', {
             method: 'POST',
             body: JSON.stringify(deals),
             headers: {

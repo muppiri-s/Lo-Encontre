@@ -3,18 +3,19 @@ import { useState } from "react"
 
 function Notification() {
   const [status, setStatus] = useState(null)
-  const [email, setEmail] = useState("")
-  const [name, setName] = useState("")
-
-  const FORM_URL = `http://localhost:3001/logo`
+  // const [email, setEmail] = useState("")
+  // const [name, setName] = useState("")
+  const [email, setEmail] = useState("");
 
   const handleSubmit = async (event) => {
     event.preventDefault()
 
-    const data = new FormData(event.target)
+    const data = {
+      email,
+    };
 
     try {
-      const response = await fetch(FORM_URL, {
+      const response = await fetch("https://loencontre-kzki.onrender.com/api/sendemail", {
         method: "post",
         body: data,
         headers: {
@@ -40,11 +41,6 @@ function Notification() {
     setEmail(value)
   }
 
-  const handleNameChange = (event) => {
-    const { value } = event.target
-    setName(value)
-  }
-
   return (
     <div className="box">
       {status === "SUCCESS" && (
@@ -67,8 +63,6 @@ function Notification() {
             name="fields[first_name]"
             placeholder="First name"
             type="text"
-            onChange={handleNameChange}
-            value={name}
           />
           <input
             aria-label="Your email address"

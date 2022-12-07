@@ -23,7 +23,6 @@ app.use((req, res, next) => {
 app.use('/api/user/', userRoutes)
 app.use('/api/category/', categoryRoutes)
 app.use('/api/deals', dealsRoutes)
-// app.use('/app/deals/list/', dealsRoutes)
 
 // connect to db
 mongoose.connect("mongodb+srv://loEncontre:LoEncontre123@cluster0.fegvvyy.mongodb.net/UserProfile").then(() => {

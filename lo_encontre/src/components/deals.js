@@ -11,7 +11,7 @@ const DealsDetails = ({ deals }) => {
         }
         // console.log("Deals page",user.email)
 
-        const response = await fetch('http://localhost:8000/api/deals/' + deals._id, {
+        const response = await fetch('https://loencontre-kzki.onrender.com/api/deals/' + deals._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.email}`

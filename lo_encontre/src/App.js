@@ -14,7 +14,6 @@ import PostaDeal from './components/post_a_deal';
 
 function App() {
   const { user } = useAuthContext()
-  console.log("user",user)
   return (
     <Router>
       <Navbar />

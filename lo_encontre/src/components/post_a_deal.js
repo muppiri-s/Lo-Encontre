@@ -12,7 +12,7 @@ const PostaDeal = () => {
 
     useEffect(() => {
         const fetchProducts = async () => {
-            const response = await fetch('http://localhost:8000/api/deals', {
+            const response = await fetch('hhttps://loencontre-kzki.onrender.com/api/deals', {
                 headers: { 'Authorization': `Bearer ${user.email}` },
             })
             const json = await response.json()
