@@ -15,7 +15,7 @@ function Notification() {
     };
 
     try {
-      const response = await fetch("https://loencontre-kzki.onrender.com/api/sendemail", {
+      const response = await fetch("http://3.21.166.219:8000/api/sendemail", {
         method: "post",
         body: data,
         headers: {

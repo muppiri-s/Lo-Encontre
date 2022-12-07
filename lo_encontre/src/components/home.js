@@ -6,7 +6,7 @@ const Home = () => {
 
     const getResult = async (event) => {
         event.preventDefault();
-        const response = await fetch(`https://loencontre-kzki.onrender.com/api/category/search?key=${search}`, {
+        const response = await fetch(`http://3.21.166.219:8000/api/category/search?key=${search}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         });
