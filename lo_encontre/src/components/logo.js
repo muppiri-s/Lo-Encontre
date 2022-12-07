@@ -14,7 +14,7 @@ const Logo = () => {
       <Title>
         <Span>Lo</Span> Encontre<Span>.</Span>
         <p className="para">"I Found It!"</p>
-        <button className='btn' onClick={routeChange}>Go Ahead &gt;&gt;&gt;</button>
+        <button className='btn' onClick={routeChange}>Continue as guest &gt;&gt;&gt;</button>
       </Title>
     </Container>
   );

@@ -1,8 +1,6 @@
-// const User = require('../models/userModel')
 const url = require('url');
 const {PythonShell} =require('python-shell');
 
-// login user
 const getCategories = async (req, res) => {
     const key = req.query.key
 

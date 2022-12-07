@@ -1,77 +1,42 @@
-import React from "react";
-import { useState } from "react";
-import Kohls from "./coupons";
+import { useEffect } from 'react'
+import { useDealContext } from "../hooks/useDealContext"
+import { useAuthContext } from "../hooks/useAuthContext"
 
-import LocationInfo from "./multistep-form/first";
-import OtherInfo from "./multistep-form/second";
-import PersonalInfo from "./multistep-form/third";
-import SignUp from "./multistep-form/signup";
+// components
+import DealsDetails from '../components/deals'
+import DealForm from '../components/deal_form'
 
-function PostaDeal() {
-    const [page, setPage] = useState(0);
+const PostaDeal = () => {
+    const { product, dispatch } = useDealContext()
+    const { user } = useAuthContext()
 
-    const [x, setX] = useState(0);
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const response = await fetch('http://localhost:8000/api/deals', {
+                headers: { 'Authorization': `Bearer ${user.email}` },
+            })
+            const json = await response.json()
 
-    const [formData, setFormData] = useState({
-        fullname: "",
-        username: "",
-        password: "",
-        nickname: "",
-        email: "",
-        address: "",
-        nationality: "",
-        zipcode: "",
-        highestQualification: "",
-        occupation: "",
-        about: "",
-    });
+            if (response.ok) {
+                dispatch({ type: 'SET_DEALS', payload: json })
+            }
+        }
 
-    const componentList = [
-        <SignUp
-        formData={formData}
-        setFormData={setFormData}
-        page={page}
-        setPage={setPage}
-        x={x}
-        setX={setX}
-      />,
-        <PersonalInfo
-            formData={formData}
-            setFormData={setFormData}
-            page={page}
-            setPage={setPage}
-            x={x}
-            setX={setX}
-        />,
-        <LocationInfo
-            formData={formData}
-            setFormData={setFormData}
-            page={page}
-            setPage={setPage}
-            x={x}
-            setX={setX}
-        />,
-        <OtherInfo
-            formData={formData}
-            setFormData={setFormData}
-            page={page}
-            setPage={setPage}
-            x={x}
-            setX={setX}
-        />,
-    ];
+        if (user) {
+            fetchProducts()
+        }
+    }, [dispatch, user])
 
     return (
-        <div>
-            <div className="progress-bar">
-                {
-                    <div style={{ width: page === 0 ? "25%" : page === 1 ? "50%" : page === 2 ? "75%" : "100%", }}></div>
-                }
+        <div className="home">
+            <div className="product">
+                {product && product.map((product) => (
+                    <DealsDetails key={product._id} product={product} />
+                ))}
             </div>
-            <div className="body">{componentList[page]}</div>
-                <Kohls />
+            <DealForm />
         </div>
-    );
+    )
 }
 
 export default PostaDeal;

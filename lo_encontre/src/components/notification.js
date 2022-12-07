@@ -67,7 +67,6 @@ function Notification() {
             name="fields[first_name]"
             placeholder="First name"
             type="text"
-            className="form_imput"
             onChange={handleNameChange}
             value={name}
           />
@@ -77,7 +76,6 @@ function Notification() {
             placeholder="Email address"
             required
             type="email"
-            className="form_imput"
             onChange={handleEmailChange}
             value={email}
           />

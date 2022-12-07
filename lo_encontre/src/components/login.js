@@ -1,25 +1,30 @@
-import React from 'react';
 import { useState } from 'react';
+import { useLogin } from '../hooks/useLogin';
+import { useNavigate } from "react-router-dom";
 
-const Login = (props) => {
+const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const {login, isLoading, error} = useLogin()
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        console.log(email, password)
+        await login(email, password)
+        navigate("/home");
     }
     return (
-        <div>
-            <form className="form" onSubmit={handleSubmit}>
+        <div className='container'>
+            <form className="sub_form" onSubmit={handleSubmit}>
                 <h3>Login</h3>
                 <label>Email:</label>
-                <input type="Email" onChange={(e) => setEmail(e.target.value)} value={email} />
+                <input type="Email" onChange={(e) => setEmail(e.target.value)} value={email} /><br />
                 <label>Password:</label>
                 <input type="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
                 <br/><br />
-                <button>Log in</button>
+                <button className='btn' disabled={isLoading}>Log in</button>
+                {error && <div className='error'>{error}</div>}
             </form>
         </div>
     )
