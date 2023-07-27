@@ -31,10 +31,10 @@ Lo Encontre is a powerful product search engine designed to help users find the 
 
 5. Run the backend server and frontend development server:
    ```
-   cd frontend
+   cd src/components
    npm start
 
-   cd ../backend
+   cd src/server
    npm start
    ```
 
